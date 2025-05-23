@@ -48,7 +48,7 @@ async function run() {
       res.send(result);
     });
 
-    // GET: Get plant by id
+    // : Get plant by id
     app.get("/plants/:id", async (req, res) => {
       const { id } = req.params;
       try {
