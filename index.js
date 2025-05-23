@@ -41,7 +41,7 @@ async function run() {
       res.send(result);
     });
 
-    // GET: Get all plants
+    // Get all plants
     app.get("/plants", async (req, res) => {
       const cursor = plants.find();
       const result = await cursor.toArray();
