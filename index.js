@@ -1,9 +1,7 @@
 const express = require("express");
 const cors = require("cors");
-
-
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
-const dotenv = require("dotenv").config();
+require("dotenv").config();
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -12,9 +10,8 @@ const port = process.env.PORT || 5000;
 app.use(express.json());
 app.use(cors());
 
-
 app.get("/", (req, res) => {
-  res.send({ message: "🌱 Plant Care Tracker API is running!" });
+  res.send("Hello World!");
 });
 
 // MongoDB URI
@@ -30,7 +27,7 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
-    await client.connect();
+    // await client.connect();
 
     const plants = client.db("plantsdb").collection("plants");
 
@@ -41,14 +38,14 @@ async function run() {
       res.send(result);
     });
 
-    // Get all plants
+    // GET: Get all plants
     app.get("/plants", async (req, res) => {
       const cursor = plants.find();
       const result = await cursor.toArray();
       res.send(result);
     });
 
-    //  Get plant by id
+    // GET: Get plant by id
     app.get("/plants/:id", async (req, res) => {
       const { id } = req.params;
       try {
@@ -72,7 +69,7 @@ async function run() {
       res.send(result);
     });
 
-    //  Delete plant by ID
+    // DELETE: Delete plant by ID
     app.delete("/plants/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
@@ -92,13 +89,13 @@ async function run() {
 
     // Confirm DB connection
     await client.db("admin").command({ ping: 1 });
-    console.log(" 🌱 Connected to MongoDB");
+    console.log("✅ Connected to MongoDB");
   } catch (error) {
     console.error("MongoDB connection error:", error);
   }
 }
 
-run().catch(console.dir);
+run()
 
 app.listen(port, () => {
   console.log(`🚀 Server running at http://localhost:${port}`);
