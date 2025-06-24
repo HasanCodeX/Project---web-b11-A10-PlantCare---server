@@ -84,7 +84,9 @@ npm start
 
 # or for development with nodemon
 
-```npx nodemon index.js```
+```bash
+npx nodemon index.js
+```
 
 ## Vercel Deployment
 
