@@ -94,10 +94,11 @@ Install Vercel CLI
 npm install -g vercel
 ```
 
-##Deploy
+## Deploy
 
-bash
+```bash
 vercel
+```
 📜 Environment Variables
 Variable	Required	Description
 ```
