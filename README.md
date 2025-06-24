@@ -62,13 +62,13 @@ git clone https://github.com/HasanCodeX/Project---web-b11-A10-PlantCare---server
 cd plant-care-backend
 ```
 
-###Install dependencies
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-##Create .env file
+## Create .env file
 
 ```env
 PORT=5000
@@ -76,7 +76,7 @@ NAME=your_mongodb_username
 PASS=your_mongodb_password
 ```
 
-##Start server
+## Start server
 
 ```bash
 npm start
@@ -86,11 +86,11 @@ npm start
 
 ```npx nodemon index.js```
 
-##Vercel Deployment
+## Vercel Deployment
 
 Install Vercel CLI
 
-```bash
+``` bash
 npm install -g vercel
 ```
 
