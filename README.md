@@ -94,7 +94,7 @@ Install Vercel CLI
 npm install -g vercel
 ```
 
-## Deploy
+ Deploy
 
 ```bash
 vercel
