@@ -122,7 +122,10 @@ Open a Pull Request
 📄 License
 This project is currently unlicensed. For usage permissions, please contact the maintainer.
 
-📬 Contact
-Maintainer: Mehedi Hasan
-📧 Email: mehedi.hasan11023@gmail.com 
+📬 Contact 
+
+Maintainer: Mehedi Hasan 
+
+📧 Email: mehedi.hasan11023@gmail.com  
+
 🔗 GitHub: https://github.com/mehedi-hasan1102
