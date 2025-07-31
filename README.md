@@ -58,8 +58,8 @@ text
 ### Local Development
 1. Clone repository
 ```bash
-git clone https://github.com/HasanCodeX/Project---web-b11-A10-PlantCare---server
-cd plant-care-backend
+git clone https://github.com/mehedi-hasan1102/Plant-Care-Server
+cd Plant-Care-Server
 ```
 
 ### Install dependencies
@@ -124,5 +124,5 @@ This project is currently unlicensed. For usage permissions, please contact the 
 
 📬 Contact
 Maintainer: Mehedi Hasan
-📧 Email: dev.hasan10@gmail.com
-🔗 GitHub: https://github.com/HasanCodeX
+📧 Email: mehedi.hasan11023@gmail.com 
+🔗 GitHub: https://github.com/mehedi-hasan1102
